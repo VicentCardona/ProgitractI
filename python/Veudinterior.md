@@ -49,15 +49,22 @@ per crear un fitxer anomenat `indoor.py` on escriureu el vostre programa.
 
 ## Com provar
 
-
+El primer de tot, proveu vosaltres mateixos:
 
 -   Executeu el vostre programa ` indoor.py`. Escriviu `HOLA`i premeu Enter. El vostre programa hauria de sortir `hola`.
 -   Executeu el vostre programa ` indoor.py`. Escriviu `AIXÒ ES PROGITRACT1`i premeu Enter. El vostre programa hauria de sortir `això es progitract1`.
 -   Executeu el vostre programa ` indoor.py`. Escriviu `50`i premeu Enter. El vostre programa hauria de sortir `50`.
 
 
-Una vegada heu provat vosaltres mateixos el codi, podeu executar l'apartat Tests per a comprovar que el vostre codi es correcte. En aquest cas, podreu afegir la tasca i verificar la vostra sol·lució.
+Si trobeu un error que diu que el vostre fitxer no es pot obrir, torneu sobre els vostres passos per assegurar-vos que sou a la vostra carpeta `indoor` i que heu desat el vostre `indoor.py` fitxer allà. Recordeu com?
 
+Podeu executar el següent per comprovar el vostre codi mitjançant `check50`, un programa que CS50 utilitzarà per provar el vostre codi quan l'envieu. Però assegura't de provar-ho tu mateix!
+
+```
+check50 cs50/problems/2022/python/indoor
+```
+
+Les emoticones verdes signifiquen que el vostre programa ha superat una prova! Els cenys vermells indicaran que el vostre programa ha sortit alguna cosa inesperada.
 ## Com enviar
 
 Atèn a les explicacions del teu professor per a enviar.
