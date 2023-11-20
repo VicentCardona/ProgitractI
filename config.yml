@@ -3,3 +3,7 @@ plugins:
   - jemoji
 relative_links:
   enabled: true
+markdown: kramdown
+kramdown:
+    math_engine: katex
+  
