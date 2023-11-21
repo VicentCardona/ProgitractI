@@ -2,11 +2,10 @@
 layout: mathjax
 ---
 
+# Teoría de la Relatividad
 
-# Título de tu página
+La famosa ecuación de Einstein es:
 
-Contenido de tu página con fórmulas LaTeX:
+$$ E=mc^2 $$
 
-$$
-E=mc^2
-$$
+Esto también se puede expresar como \(E=mc^2\) para fórmulas en línea.
