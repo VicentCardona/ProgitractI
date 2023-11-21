@@ -4,7 +4,7 @@ layout: mathjax
 
   
 # Einstein
-Fins i tot si no heu estudiat física (recentment o mai!), potser haureu sentit que $\ E = m·c^2 $, on `E` representa l'energia (mesurada en Joules), `m` representa massa (mesurada en quilograms) i `c` representa la velocitat de la llum (mesurada aproximadament com 300000000 metres per segon), segons [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein) et al. Essencialment, la fórmula significa que massa i energia són equivalents.
+Fins i tot si no heu estudiat física (recentment o mai!), potser haureu sentit que $ E = m·c^2 $, on `E` representa l'energia (mesurada en Joules), `m` representa massa (mesurada en quilograms) i `c` representa la velocitat de la llum (mesurada aproximadament com 300000000 metres per segon), segons [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein) et al. Essencialment, la fórmula significa que massa i energia són equivalents.
 
 En un fitxer anomenat `einstein.py`, implementeu un programa en Python que demana a l'usuari la massa com a nombre enter (en quilograms) i després produeix el nombre equivalent de Joules com a nombre enter. Suposem que l'usuari introduirà un nombre enter.
 
