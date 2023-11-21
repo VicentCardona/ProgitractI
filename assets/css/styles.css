@@ -1,0 +1,39 @@
+/* assets/css/styles.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+  margin: 20px;
+}
+
+.MathJax {
+  font-size: 1.2em;
+  color: #1a1a1a;
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.MathJax_Display {
+  display: block;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+a {
+  color: #007acc;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+p {
+  margin-bottom: 1.4em;
+}
