@@ -1,9 +1,6 @@
 plugins:
   - jekyll-relative-links
   - jemoji
-markdown: kramdown
-kramdown:
-    math_engine: katex
 relative_links:
   enabled: true
 
