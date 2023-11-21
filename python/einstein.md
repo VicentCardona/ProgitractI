@@ -60,9 +60,4 @@ Al vostre terminal, executeu el següent per enviar el vostre treball.
 ```
 submit50 cs50/problems/2022/python/einstein
 ```
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-</html>
 
