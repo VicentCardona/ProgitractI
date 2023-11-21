@@ -1,20 +1,4 @@
----
-layout: default
----
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Agrega el siguiente código para MathJax -->
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-  <!-- Fin del código de MathJax -->
-  <!-- ... Otras etiquetas head ... -->
-</head>
-<body>
   
 # Einstein
 Fins i tot si no heu estudiat física (recentment o mai!), potser haureu sentit que $\ E = m·c^2 $, on `E` representa l'energia (mesurada en Joules), `m` representa massa (mesurada en quilograms) i `c` representa la velocitat de la llum (mesurada aproximadament com 300000000 metres per segon), segons [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein) et al. Essencialment, la fórmula significa que massa i energia són equivalents.
@@ -73,7 +57,9 @@ Al vostre terminal, executeu el següent per enviar el vostre treball.
 ```
 submit50 cs50/problems/2022/python/einstein
 ```
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
-</body>
 </html>
 
