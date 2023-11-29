@@ -14,11 +14,11 @@ def main():
     print(f"Deixa {tip:.2f}€")
 
 
-def euros_a_float(d):
+def euros_a_float(€):
     # TODO
 
 
-def percent_a_float(p):
+def percentatge_a_float(percent):
     # TODO
 
 
@@ -38,7 +38,7 @@ Pistes
 -   Recordeu que `float` pot convertir un `str` en un `float`, per [documentació de float](https://docs.python.org/es/3/library/functions.html#float).
 -   Recordeu que un `str` inclou molts mètodes, segons [documentació de mètodes en cadenes](https://docs.python.org/es/3/library/stdtypes.html#string-methods).
 
-## [Abans que comencis](https://cs50.harvard.edu/python/2022/psets/0/tip/#before-you-begin)
+## Abans que comencis
 
 Inicieu la sessió a [cs50.dev](https://cs50.dev/), feu clic a la finestra del vostre terminal i executeu `cd` sol. Hauríeu de trobar que la sol·licitud de la vostra finestra de terminal s'assembla a la següent:
 ```
