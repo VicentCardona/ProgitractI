@@ -4,15 +4,17 @@ El diagrama de flux és una eina molt útil per millorar els processos de trebal
 
 Mapejar i investigar els processos és important per descobrir com es poden millorar.
 
-Els diagrames de flux són fàcils de crear i, atès que les formes són simples i visuals, també són fàcils d'entendre.<iframe width="560" height="315" src="https://www.youtube.com/embed/uFUboyAX1b8?si=xlU0h2v2j2NA7bJ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Els diagrames de flux són fàcils de crear i, atès que les formes són simples i visuals, també són fàcils d'entendre.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uFUboyAX1b8?si=xlU0h2v2j2NA7bJ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Què és un Diagrama de Flux?
 
 Un diagrama de flux, també anomenat Fluxograma de Processos o Diagrama de Processos , representa la **seqüència** o els passos lògics (ordenats) **per realitzar una tasca mitjançant uns símbols**
 
  Dins dels símbols s'escriuen els passos que cal seguir.
 
-**Els diagrames de flux representen la seqüència lògica o els passos que hem de fer per realitzar una tasca mitjançant uns símbols i dins d'ells es descriuen els passos que heu de fer**
-.
+**Els diagrames de flux representen la seqüència lògica o els passos que hem de fer per realitzar una tasca mitjançant uns símbols i dins d'ells es descriuen els passos que heu de fer**.
 
 Un diagrama de flux ha de proporcionar una informació clara, ordenada i concisa de tots els passos que cal seguir.
 
@@ -24,29 +26,25 @@ El procés o passos que representa el diagrama de flux pot ser de qualsevol tipu
 
 Moltes vegades abans de fer un diagrama de flux es realitza un "Algoritme" del problema o procés a desenvolupar.
 
-Un **algorisme** descriu una seqüència de **passos escrits** per realitzar una tasca.
+Un **algoritme** descriu una seqüència de **passos escrits** per realitzar una tasca.
 
 El Diagrama de Flux és la seva representació esquemàtica.
 
-**Algorisme**
+**Algoritme**: Escriure els passos ordenats a realitzar per solucionar el problema.
 
-: Escriure els passos ordenats a realitzar per solucionar el problema.
+**Diagrama de Flux**: Representació mitjançant un esquema amb símbols de l'algorisme.
 
-**Diagrama de Flux**
-
-: Representació mitjançant un esquema amb símbols de l'algorisme.
-
-Els diagrames de flux són una excel·lent eina per a**resoldre problemes**, **comprendre el procés** a seguir així com per **identificar possibles errors** abans del desenvolupament final de la tasca.
+Els diagrames de flux són una excel·lent eina per a **resoldre problemes**, **comprendre el procés** a seguir així com per **identificar possibles errors** abans del desenvolupament final de la tasca.
 
 ### Com fer un Diagrama de Flux
 
-Normalment per fer un diagrama de flux primer es fa l'algorisme.
+Normalment per fer un diagrama de flux primer es fa l'algoritme.
 
 Un exemple per cuinar un ou per a una altra persona seria:
 
 \- Pregunto si voleu l'ou fregit.  
 \- Si em diu que si, ho frego, si em diu que no, ho faig bullit.  
-\- Un cop cuinat li pregunto si voleu sal a l'ou.  
+\- Quan estigui cuinat li pregunto si voleu sal a l'ou.  
 \- Si em diu que no, ho serveixo al Plat, si em diu que si, li fa sal i després ho serveixo al plat.
 
 Si us fixeu els passos no podeu canviar la vostra posició.
@@ -71,7 +69,7 @@ Es fan servir per fer un programa informàtic, per analitzar el que ha de fer un
 
 Un diagrama de flux és útil en tot allò que es necessiti una organització prèvia abans del seu desenvolupament.
 
-En la realització d'un programa informàtic és imprescindible primer fer el diagrama de flux, independentment del [llenguatge de programació](https://www.areatecnologia.com/informatica/lenguajes-de-programacion.html "llenguatges de programació") que usem després.
+En la realització d'un programa informàtic és imprescindible primer fer el diagrama de flux, independentment del **llenguatge de programació** que usem després.
 
 Quan tenim el nostre diagrama de flux només haurem de conèixer les ordres del llenguatge que realitzen aquestes tasques que s'especifiquen al diagrama
 
@@ -117,9 +115,7 @@ A l'exercici tenim l'inici i la fi, una entrada de dades, per ficar els 2 númer
 
 Cadascú d'aquests passos amb el símbol corresponent al diagrama.
 
-Un altre exemple
-
-d'un diagrama de flux per a una operació senzilla.
+Un altre exemple d'un diagrama de flux per a una operació senzilla:
 
 Imaginem que tenim un llum o bombeta i volem fer el diagrama de flux per saber què fer quan el llum no funciona.
 
@@ -133,7 +129,8 @@ Bé en fem un que ens mostri el resultat de l'àrea d'un triangle a la pantalla.
 
 Com veieu, en aquest ni tan sols hem posat les operacions dins dels símbols, ja que amb la forma del símbol ja s'entén.
 
-No hem fet servir gaire el símbol de prendre una decisió, per això farem un en què ens digui si el nombre és parell o imparell: et presentem 15 diagrames de flux resolts.[Exemples de Diagrames de Flux](https://www.areatecnologia.com/informatica/ejemplos-de-diagramas-de-flujo.html "exemples de diagrames de flux") Al següent enllaç **Posem un diagrama de flux en anglès?** Pots realitzar mentalment el diagrama per al número 0 i veuràs com ho acabes entenent. Intenta comprendre'l i veure què fa. Mentre no sigui 50 el programa torna a la tercera seqüència que serà sumar-li un número a l'anterior N=N+1. Fixa't que el diagrama acaba quan N, que és el número a cada moment, és 50. El primer és posar a zero la suma i donar el primer número a sumar que serà el 0..un diagrama de flux per mostrar la suma dels 50 primers números Hem de fer Bé ara fem una mica més complicat. , fins i tot en podem fer un per cuinar un ou, com vam veure al principi.[informàtica](https://www.areatecnologia.com/INFORMATICA.htm "aprendre ordinador") A més, els diagrames de flux no només valen per Pren una sortida en funció del resultat de l'entrada. Això és la presa de decisions. Si ho és, es veu a la pantalla "Si és par", si no ho és, es veu a la pantalla "No és par". En dividir-lo entre 2 la resta és 0? Hi ha 2 possibilitats. Hi ha la decisió. Com ja has de saber si dividit un nombre entre 2 i la resta és 0 el nombre és parell, en cas contrari seria senar.
+No hem fet servir gaire el símbol de prendre una decisió, per això farem **un en què ens digui si el nombre és parell o imparell**: et presentem 15 diagrames de flux resolts.[Exemples de Diagrames de Flux](https://www.areatecnologia.com/informatica/ejemplos-de-diagramas-de-flujo.html "exemples de diagrames de flux")
+Al següent enllaç **Posem un diagrama de flux en anglès?** Pots realitzar mentalment el diagrama per al número 0 i veuràs com ho acabes entenent. Intenta comprendre'l i veure què fa. Mentre no sigui 50 el programa torna a la tercera seqüència que serà sumar-li un número a l'anterior N=N+1. Fixa't que el diagrama acaba quan N, que és el número a cada moment, és 50. El primer és posar a zero la suma i donar el primer número a sumar que serà el 0..un diagrama de flux per mostrar la suma dels 50 primers números Hem de fer Bé ara fem una mica més complicat. , fins i tot en podem fer un per cuinar un ou, com vam veure al principi.[informàtica](https://www.areatecnologia.com/INFORMATICA.htm "aprendre ordinador") A més, els diagrames de flux no només valen per Pren una sortida en funció del resultat de l'entrada. Això és la presa de decisions. Si ho és, es veu a la pantalla "Si és par", si no ho és, es veu a la pantalla "No és par". En dividir-lo entre 2 la resta és 0? Hi ha 2 possibilitats. Hi ha la decisió. Com ja has de saber si dividit un nombre entre 2 i la resta és 0 el nombre és parell, en cas contrari seria senar.
 
 ![diagrames de flux](https://www.areatecnologia.com/informatica/imagenes/diagrama-flujo-par-impar.jpg)
 
@@ -147,10 +144,5 @@ La paraula "mod" significa dividir, per tant, "mod 2" és dividir entre 2.
 
 Ja hi ha programes que automatitzen i simplifiquen la creació dels diagrames de flux.
 
-Si vols descarregar-te gratuïtament un programa per crear diagrames de flux de forma senzilla aquí tens aquest enllaç: [Programa Crear Diagrames de Flux](https://www.areatecnologia.com/DESCARGAS/programa-crear-diagrama-flujo.html "programa crear diagrames de flux").
+Si vols descarregar-te gratuïtament un programa per crear diagrames de flux de forma senzilla aquí tens aquest enllaç: [Programa Crear Diagrames de Flux](https://app.diagrams.net/)
 
-Abans d'acabar, si us interessa aprendre a programar, us recomanem que comenceu amb aquest llibre "Fonaments de Programació Per a Tots Els Públics".
-
-És molt bon llibre i amb un preu fantàstic, ia més inclou un curs bàsic de JavaScript perquè practiquis el que aprenguis:
-
-Si t'ha agradat la pàgina [Diagrama de Flux](https://www.areatecnologia.com/diagramas-de-flujo.htm "diagrama de flux") Comparteix, Gràcies:
