@@ -1,7 +1,11 @@
 # Salutació Federal Savings Bank
+<iframe width="765" height="429" src="https://www.youtube.com/embed/IN6cJ_wGmsk" title="SEINFELD Bank Retention Pledge Must Say Hello 100 Dollars.wmv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 A la [temporada 7, episodi 24](https://en.wikipedia.org/wiki/The_Invitations) de [Seinfeld](https://en.wikipedia.org/wiki/Seinfeld), [Kramer](https://en.wikipedia.org/wiki/Cosmo_Kramer) visita un banc que es compromet a donar 100 dòlars a qualsevol persona que no sigui rebut amb un "hola". En canvi, Kramer és rebut amb un "hola", que insisteix que no és un "hola", i per això demana 100 dòlars. El gerent del banc proposa un compromís: "Vas rebre una salutació que comença amb una 'h', com sonen 20 dòlars?" Kramer accepta.
 
 En un fitxer anomenat `bank.py`, implementeu un programa que demani a l'usuari una salutació. Si la salutació comença amb "hola", sortiu `$0`. Si la salutació comença amb una “h” (però no “hola”), sortiu `$20`. En cas contrari, sortiu `$100`. Ignoreu qualsevol espai en blanc inicial de la salutació de l'usuari i tracteu la salutació de l'usuari sense distingir entre majúscules i minúscules.
+
+- Recurdeu que un `str` o *string* inclou molts mètodes, segons [la documentació de python](https://docs.python.org/es/3/library/stdtypes.html#string-methods).
+- En aquest cas, hauràs d'emprar els mètodes `str.startswith()` i `str.strip()`.
 
 ## Abans que comencis
 
