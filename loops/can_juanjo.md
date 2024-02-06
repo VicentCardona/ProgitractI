@@ -6,17 +6,28 @@ Sens dupte, el lloc més popular de l'institut es el Bar d'en Juanjo. Aquest ofe
 
 ```python
 {
-  "Pizza formatge": 2.00,
-  "Gofre xocolata": 2.00,
-  "Kinder bueno": 1.50,
-  "Pals de pipes": 1.40,
-  "Yogur fruita": 2,75,
-  "Chips Ahoy": 1.30,
-  "Doritos": 1.10,
-  "Bocata vegetal": 2.85,
-  "Bocata Pernil Salat": 2.40,
+  "pizza formatge": 2.00,
+  "gofre xocolata": 2.00,
+  "kinder bueno": 1.50,
+  "pals de pipes": 1.40,
+  "yogur fruita": 2,75,
+  "chips Ahoy": 1.30,
+  "doritos": 1.10,
+  "bocata vegetal": 2.85,
+  "bocata Pernil Salat": 2.40,
 }
 ```
 
-Implementeu un programa que permet a un usuari fer una comanda, demanant els artícles, un per línea, fins que l'usuari introdueix Ctrl-d (que és una manera habitual d'acabar l'entrada d'un programa. Després de cada element introduït, 
+Implementeu un programa que permet a un usuari fer una comanda, demanant els artícles, un per línea, fins que l'usuari introdueix Ctrl+d (que és una manera habitual d'acabar l'entrada d'un programa. El programa ha d'imprimiur el cost total de tots els elements introduïts fins el moment, amb el sufix del signe d'euros `€` i formatejat amb 2 decimals. Tracteu l'usuari **sense distinció de majúscules o minúscules** i ignoreu qualsevol entrada que no sigui un element de la "carta".
+
+## A tenir en compte:
+
+- Podeu detectar quan l'usuari ha introduït Ctrl+d agafant un codi [`EOFError`](https://docs.python.org/es/3/library/exceptions.html#EOFError) com:
+```python
+try:
+  item = input()
+except EOFError:
+  ...
+```
+- 
   
