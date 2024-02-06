@@ -1,5 +1,6 @@
 # El Bar de Can Juanjo
 
+![FotoBarJuanjo](https://vicentcardona.github.io/ProgitractI/logo_juanjo.jpg)
 
 Sens dupte, el lloc més popular de l'institut es el Bar d'en Juanjo. Aquest ofereix multituts d'snacks, segons el `dict` següent, on el valor de cada clau és un preu en euros:
 
