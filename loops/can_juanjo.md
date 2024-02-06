@@ -20,7 +20,7 @@ Sense dubte, el lloc més popular de l'institut és el Bar d'en Juanjo. Aquest o
 
 Implementeu un programa que permet a un usuari fer una comanda, demanant els articles, un per línia, fins que l'usuari introdueix Ctrl+d (que és una manera habitual d'acabar l'entrada d'un programa. El programa ha d'imprimiur el cost total de tots els elements introduïts fins al moment, amb el sufix del signe d'euros `€` i formatat amb 2 decimals. Tracteu l'usuari **sense distinció de majúscules o minúscules** i ignoreu qualsevol entrada que no sigui un element de la "carta".
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=XJojPe1GSAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XJojPe1GSAs?si=zYFVKIYm6dXEpFbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## A tenir en compte:
 
