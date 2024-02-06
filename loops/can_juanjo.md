@@ -10,7 +10,7 @@ Sens dupte, el lloc més popular de l'institut es el Bar d'en Juanjo. Aquest ofe
   "gofre xocolata": 2.00,
   "kinder bueno": 1.50,
   "pals de pipes": 1.40,
-  "yogur fruita": 2,75,
+  "yogur fruita": 2.75,
   "chips Ahoy": 1.30,
   "doritos": 1.10,
   "bocata vegetal": 2.85,
@@ -19,6 +19,8 @@ Sens dupte, el lloc més popular de l'institut es el Bar d'en Juanjo. Aquest ofe
 ```
 
 Implementeu un programa que permet a un usuari fer una comanda, demanant els artícles, un per línea, fins que l'usuari introdueix Ctrl+d (que és una manera habitual d'acabar l'entrada d'un programa. El programa ha d'imprimiur el cost total de tots els elements introduïts fins el moment, amb el sufix del signe d'euros `€` i formatejat amb 2 decimals. Tracteu l'usuari **sense distinció de majúscules o minúscules** i ignoreu qualsevol entrada que no sigui un element de la "carta".
+
+
 
 ## A tenir en compte:
 
@@ -29,5 +31,5 @@ try:
 except EOFError:
   ...
 ```
-- 
+La idea es que imprimeixi una nova linea per així 
   
