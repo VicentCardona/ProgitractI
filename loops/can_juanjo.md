@@ -38,6 +38,3 @@ if clau in d:
   ...
 ```
 On `d` es un `dict` i clau és un `str`.
-
-https://www.youtube.com/watch?v=XJojPe1GSAs
-  
