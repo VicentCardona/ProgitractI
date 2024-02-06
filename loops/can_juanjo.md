@@ -31,5 +31,12 @@ try:
 except EOFError:
   ...
 ```
-La idea es que imprimeixi una nova linea per així 
+- Introduir `Ctrl+d` no necessita donar-li a Enter. Recorda que pots introduïr linees com a programador simplement imprimint `\n`-
+- Tingues en conta que `dict`inclour molts [mètodes](docs.python.org/es/3/library/stdtypes.html#mapping-types-dict) i admet operacions com:
+```python
+if clau in d:
+  ...
+```
+on `d` es un `dict` i clau es un `str`.
+
   
