@@ -10,7 +10,7 @@
 |_|_|_|\_\___|  \__|_| |_|_|___/  
 ```
 
-Entre els Escriu de lletra admesos per FIGlet es troben els de [figlet.org/examples.html](http://www.figlet.org/examples.html) .
+Entre els tipus de lletra admesos per FIGlet es troben els de [figlet.org/examples.html](http://www.figlet.org/examples.html) .
 
 Des de llavors, FIGlet s'ha portat a Python com un mòdul anomenat [pyfiglet](https://pypi.org/project/pyfiglet/0.7/) .
 
@@ -18,11 +18,11 @@ En un fitxer anomenat `figlet.py`, implementeu un programa que:
 
 -   S'espera zero o dos arguments de línia d'ordres
 -   Zero si l'usuari vol enviar text amb una font aleatòria.
--   Dos si l'usuari vol generar text amb un Escriu de lletra específic, en aquest cas el primer dels dos hauria de ser `-f`o `--font`, i el segon dels dos hauria de ser el nom del Escriu de lletra.
+-   Dos si l'usuari vol generar text amb un tipus de lletra específic, en aquest cas el primer dels dos hauria de ser `-f`o `--font`, i el segon dels dos hauria de ser el nom del tipus de lletra.
 -   Demana a l'usuari un `str`text.
--   Emet aquest text amb el Escriu de lletra desitjat.
+-   Emet aquest text amb el tipus de lletra desitjat.
 
-Si l'usuari proporciona dos arguments de línia d'ordres i el primer no és `-f`o `--font`el segon no és el nom d'un Escriu de lletra, el programa hauria de sortir `sys.exit`amb un missatge d'error.
+Si l'usuari proporciona dos arguments de línia d'ordres i el primer no és `-f`o `--font`el segon no és el nom d'un tipus de lletra, el programa hauria de sortir `sys.exit`amb un missatge d'error.
 
 ### Pistes
 
