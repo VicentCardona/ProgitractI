@@ -142,3 +142,13 @@ Entrega, a la tasca de classroom:
 - Arxiu
 - Captura del `check50`
 - Video "Demo" del programa
+
+# Crèdits
+#### Autor:  Vicent Cardona
+#### Departament Tecnologia [Ies Quartó de Portmany](http://iesquartodeportmany.es/)
+#### Abril 2024
+
+
+Llicència Creative Commons [Reconeixement-NoComercial-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0).
+
+Material adaptat del curs  [Introducció a la informàtica CS50](https://cs50.harvard.edu/x/2024/) compartit amb la mateixa llicència.
