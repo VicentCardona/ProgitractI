@@ -49,6 +49,8 @@ Si l'usuari proporciona dos arguments de línia d'ordres i el primer no és `-f`
 
 ## [Demostració](https://cs50.harvard.edu/python/2022/psets/4/figlet/#demo)
 
+<script async="" data-autoplay="1" data-cols="80" data-loop="1" data-rows="12" id="asciicast-LIo5QcHpUiXepVFiL4fTBwmuE" src="https://asc
+iinema.org/a/LIo5QcHpUiXepVFiL4fTBwmuE.js"></script>
 La primera sortida d'aquesta demostració utilitzava una font aleatòria. La vostra sortida pot variar.
 
 ## [Abans que comencis](https://cs50.harvard.edu/python/2022/psets/4/figlet/#before-you-begin)
