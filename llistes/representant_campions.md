@@ -36,57 +36,59 @@ from pygal import bar
 
 ### Fes un gràfic
 
-Cerqueu el `# Create a chart`comentari i afegiu el codi a sota per fer un gràfic de barres anomenat `chart`, dins dels claudàtors, doneu un títol al vostre gràfic.
+Cerqueu el comentari  `# Create a chart` i afegiu el codi a sota per fer un gràfic de barres anomenat `grafic` i doneu un títol al vostre gràfic.
 
 main.py
 
 ```python
-# Create a chart chart = Bar(title='Olympic medals')
+# Create a chart
+grafic = Bar(title='Medalles Olímpiques')
 ```
 
-Truqueu `chart.render()`per mostrar el gràfic.
+Executeu `grafic.render()`per mostrar el gràfic.
 
 main.py
 
 ```python
-# Display the chart chart.render()
+# Display the chart
+grafic.render()
 ```
 
 **Prova:** executeu el vostre codi per veure el gràfic. Estarà buit perquè encara no té dades.
 
 ![Les paraules "medalles olímpiques" sobre fons negre.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/empty_chart.png)
 
-**Depuració** : si veieu un error sobre `Bar()`o `chart.render()`sobre `not defined`:
-
--   Si l'error és per a `Bar()`, assegureu-vos que té una B majúscula al començament i claudàtors al final
--   Si l'error és per a `chart.render()`, comproveu que tingui `.`entre `chart`i `render`, així com els claudàtors al final
-
-**Depuració** : si no utilitzeu l'editor de codi Raspberry Pi i el gràfic no ha aparegut quan executeu el codi, substituïu-lo `chart.render()`per `chart.render_in_browser()`.
 
 ### Afegeix algunes dades
 
-Python pot emmagatzemar dades relacionades com una **llista** . Podeu crear llistes utilitzant claudàtors `[]`. Els elements d'una llista es separen amb comes.
+Python pot emmagatzemar dades relacionades com una **llista** . Podeu crear llistes utilitzant `[]`. Els elements d'una llista es separen amb comes.
 
 Creeu tres llistes de dades per mostrar-les al vostre gràfic.
 
 Cada llista emmagatzemarà el nom d'una nació i el nombre de medalles guanyades per aquesta nació.
 
-main.py
 
 ```python
-# Add data to the chart us = ['United States', 2399] gb = ['Great Britain', 1304] fr = ['France', 751]
+# Add data to the chart
+us = ['United States', 2399]
+gb = ['Great Britain', 1304]
+fr = ['France', 751]
 ```
 
 Quan emmagatzemeu alguna cosa en una llista, obté un **índex** . Un índex és un número que indica la posició d'un element en una llista. Els índexs de llista comencen de `0`, en lloc de `1`.
 
-Podeu obtenir un element d'una llista pel seu índex. Per exemple, `my_list[3]`obtindrà el **quart** element a `my_list`, perquè els índexs comencen a `0`.
+Podeu obtenir un element d'una llista pel seu índex. Per exemple, `my_list[3]` obtindrà el **quart** element a `my_list`, perquè els índexs comencen a `0`.
 
-Utilitzeu els índexs de les vostres llistes i `chart.add()`per mostrar les vostres dades. El nom de la nació a l'element 0 s'utilitzarà com a etiqueta de categoria per al gràfic i la quantitat de medalles a l'element 1 determinarà l'alçada de la barra.
+Utilitzeu els índexs de les vostres llistes i `grafic.add()`per a mostrar les vostres dades. El nom de la nació a l'element 0 s'utilitzarà com a etiqueta de categoria per al gràfic i la quantitat de medalles a l'element 1 determinarà l'alçada de la barra.
 
-main.py
+
 
 ```python
-gb = ['Great Britain', 1304] chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1])
+gb = ['Great Britain', 1304]
+
+grafic.add(us[0], us[1])
+grafic.add(gb[0], gb[1])
+grafic.add(fr[0], fr[1])
 ```
 
 **Prova:** executeu el vostre codi per veure el gràfic.
@@ -95,15 +97,25 @@ gb = ['Great Britain', 1304] chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) cha
 
 **Depuració** : si veieu un missatge sobre un `IndexError`, el vostre codi està intentant obtenir un valor d'un índex de llista que no existeix (p. ex. `us[2]`). Per solucionar això:
 
--   Comproveu cadascuna de les vostres `chart.add`línies per assegurar-vos que només utilitzeu `0`i `1`com a índexs.
+-   Comproveu cadascuna de les vostres línies `grafic.add` per assegurar-vos que només utilitzeu `0`i `1`com a índexs.
 -   Comproveu les línies on heu creat les vostres llistes. Assegureu-vos que cada llista té dos elements, separats per una coma.
 
-Ara carrega dos equips més afegint llistes i `chart.add()`trucades noves.
+Ara carrega dos equips més afegint llistes i nous `grafic.add()`.
 
-main.py
+
 
 ```python
-# Add data to the chart us = ['United States', 2399] gb = ['Great Britain', 1304] fr = ['France', 751] ge = ['Germany', 655] ch = ['China', 636] chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1]) chart.add(ge[0], ge[1]) chart.add(ch[0], ch[1])
+# Add data to the chart
+us = ['United States', 2399]
+gb = ['Great Britain', 1304]
+fr = ['France', 751]
+ge = ['Germany', 655]
+ch = ['China', 636]
+grafic.add(us[0], us[1])
+grafic.add(gb[0], gb[1])
+grafic.add(fr[0], fr[1])
+grafic.add(ge[0], ge[1])
+grafic.add(ch[0], ch[1])
 ```
 
 **Prova:** executeu el vostre codi per veure el gràfic actualitzat. Intenta fer clic al nom dels Estats Units. A continuació, observeu el canvi d'escala del gràfic.
@@ -112,8 +124,8 @@ main.py
 
 **Depuració** : si veieu un missatge sobre un `IndexError`, el vostre codi està intentant obtenir un valor d'un índex de llista que no existeix (p. ex. `fr[2]`). Per solucionar això:
 
--   Comproveu cadascuna de les vostres `chart.add`línies per assegurar-vos que només utilitzeu `0`i `1`com a índexs.
 -   Comproveu les línies on heu creat les vostres llistes. Assegureu-vos que cada llista té dos elements, separats per una coma.
+  
 ## Carregar dades d'un fitxer
 
 El gràfic té bona pinta! Però, gairebé 150 nacions han competit als Jocs Olímpics. Per dibuixar-los, carregareu les seves dades des d'un fitxer. Estalviarà molt d'escriptura!
@@ -124,13 +136,9 @@ El gràfic té bona pinta! Però, gairebé 150 nacions han competit als Jocs Ol�
 
 Obriu el [segon projecte inicial](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter) . L'editor de codi Raspberry Pi s'obrirà en una altra pestanya del navegador.
 
-Si teniu un compte de Raspberry Pi, podeu fer clic a **Desa** per desar una còpia del codi d'inici a la vostra biblioteca.
+Hi ha diversos fitxers `.csv` inclosos en aquest projecte inicial que contenen les dades que necessiteu per als vostres gràfics.
 
-### Treballant fora de línia
-
-Hi ha diversos `.csv`fitxers inclosos en aquest projecte inicial que contenen les dades que necessiteu per als vostres gràfics.
-
-Obriu `medals.csv`i mireu les dades que hi ha. Vegeu com cada línia té un nom d'equip i el nombre de medalles que ha guanyat, separats per una coma.
+Obriu `medals.csv` i mireu les dades que hi ha. Vegeu com cada línia té un nom d'equip i el nombre de medalles que ha guanyat, separats per una coma.
 
 ![L'editor de codi de Raspberry Pi amb el fitxer de medalles ressaltat i obert, que mostra una llista de països i números de medalles separats amb una coma.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/medals-tab.png)
 
@@ -147,7 +155,9 @@ El `for`bucle us permetrà repetir el codi. Així que carregaràs centenars d'eq
 main.py
 
 ```python
-# Add data to the chart with open('medals.csv') as f: for line in f: print(line)
+# Add data to the chart
+with open('medals.csv') as f:
+for line in f: print(line)
 ```
 
 **Prova:** executeu el vostre codi i mireu el text que imprimeix.
@@ -156,11 +166,9 @@ Observeu que cada línia té dos valors, separats per comes.
 
 ![Una llista de cadenes de text, impresa en moltes línies.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/lines.png)
 
-**Depuració:** si el codi no funciona, assegureu-vos d'haver-lo sagnat sota la `with`línia, com a l'exemple anterior.
+Cada cadena que imprimeix el vostre bucle està formada per dues peces separades per una coma. La vostra `grafic.add()`funció necessita cadascuna d'aquestes peces com a entrades separades.
 
-Cada cadena que imprimeix el vostre bucle està formada per dues peces separades per una coma. La vostra `chart.add()`funció necessita cadascuna d'aquestes peces com a entrades separades.
-
-La `split()`funció divideix una cadena en una llista, igual que les llistes que heu fet anteriorment. La `split(',')`funció crea un nou element de llista cada vegada que veu una coma.
+La funció `split()` divideix una cadena en una llista, igual que les llistes que heu fet anteriorment. La `split(',')`funció crea un nou element de llista cada vegada que veu una coma.
 
 Posa una `#`al davant del codi que s'imprimeix `line`. Això convertirà aquest codi en un comentari, de manera que Python l'ignorarà.
 
@@ -169,7 +177,13 @@ Utilitzeu el `split()`mètode per dividir cada picada en a `,`i després emmagat
 main.py
 
 ```python
-with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',') # Breaks the string into a list print(pieces) # Print each list
+with open('medals.csv') as f:
+
+for line in f:
+  #print(line)
+  pieces = line.split(',')
+  # Breaks the string into a list print(pieces)
+  # Print each list
 ```
 
 **Consell:** `split()` podeu dividir una cadena en una llista al voltant de qualsevol text que vulgueu. Podeu dividir la puntuació, una lletra o fins i tot paraules senceres.
@@ -184,10 +198,17 @@ with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',
 
 Carregueu les vostres dades al gràfic com a part del vostre `for`bucle. `team`és una cadena per la qual cosa es pot utilitzar com a etiqueta al gràfic. `medal`actualment és una cadena, però s'ha de convertir en un número. Podeu utilitzar la `int()`funció per **llançar** una cadena a un número.
 
-main.py
 
 ```python
-with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] medals = pieces[1] chart.add(team, int(medals)) # Make medals a number
+with open('medals.csv') as f:
+  for line in f:
+    #print(line)
+    pieces = line.split(',')
+    #print(pieces)
+    team = pieces[0]
+    medals = pieces[1]
+    grafic.add(team, int(medals))
+    # Make medals a number
 ```
 
 **Consell:** ara també podeu utilitzar `#`per convertir-lo `print(pieces)`en un comentari.
@@ -231,7 +252,18 @@ Canvieu el títol del gràfic, la `width`del gràfic, el fitxer que esteu obrint
 main.py
 
 ```python
-chart = Bar(title='Population', width='600') # Add data to the chart with open('pop.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] population = pieces[1] chart.add(team, int(population)) # Make population a number
+chart = Bar(title='Population', width='600')
+# Add data to the chart
+
+ with open('pop.csv') as f:
+for line in f:
+  #print(line)
+  pieces = line.split(',')
+  #print(pieces)
+  team = pieces[0]
+  population = pieces[1]
+  grafic.add(team, int(population))
+  # Make population a number
 ```
 
 Ara executeu el vostre programa i mireu el gràfic que dibuixa.
@@ -253,7 +285,17 @@ El `gdp.csv`fitxer emmagatzema el PIB com a nombres decimals. Actualitzeu el tip
 main.py
 
 ```python
-chart.title = 'GDP' # Add data to the chart with open('gdp.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] gdp = pieces[1] chart.add(team, float(gdp)) # Make GDP a number
+chart.title = 'GDP'
+# Add data to the chart
+with open('gdp.csv') as f:
+for line in f:
+#print(line)
+pieces = line.split(',')
+#print(pieces)
+team = pieces[0]
+gdp = pieces[1]
+chart.add(team, float(gdp))
+# Make GDP a number
 ```
 
 Ara executeu el vostre programa i mireu el gràfic que dibuixa.
@@ -304,4 +346,3 @@ Aquests fitxers tenen més d'una columna de números. Utilitzeu els índexs de l
 
 Les dades de diòxid de carboni utilitzen números amb decimals. Per convertir-los a partir de cadenes de text, haureu d'utilitzar `float()`en comptes de `int()`.
 
-### Projecte acabat
