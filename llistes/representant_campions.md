@@ -1,36 +1,32 @@
-## You will make
+## El que faràs
 
-Discover the power of lists in Python by creating an interactive chart of Olympic medals.
+Descobreix el poder de les llistes en Python creant un gràfic interactiu de medalles olímpiques.
 
-**The Olympic Games** began in 1896: thousands of athletes represent hundreds of nations from around the world. The modern games were inspired by ancient contests held in Olympia, Greece.
+**Els Jocs Olímpics** van començar el 1896: milers d'atletes representen centenars de nacions d'arreu del món. Els jocs moderns es van inspirar en els antics concursos celebrats a Olímpia, Grècia.
 
-You will:
+El que faràs:
 
--   Use **lists** to store related data
--   Create a **chart** using the `pygal` library
--   Load data by having your program **read a file**
+-   Utilitzar **llistes** per emmagatzemar dades relacionades
+-   Crear un **gràfic** utilitzant la biblioteca `pygal`
+-   Carregar dades fent que el programa **llegeixi un fitxer**
+- 
+## Fes un gràfic
 
-### Play ▶️
+Crear un gràfic i algunes llistes de dades per mostrar-hi.
 
-Run the program to load the chart. Notice that the chart is interactive. What happens when you click on the top three nations in the key on the left?
+![Un gràfic de barres que mostra les medalles guanyades pels Estats Units, la Gran Bretanya i França.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/short_list.png)
 
-## Make a chart
+Obriu el [projecte inicial de Representant Campions](https://editor.raspberrypi.org/en/projects/charting-champions-starter) . L'editor de codi Raspberry Pi s'obrirà en una altra pestanya del navegador.
 
-Create a chart and some lists of data to display on it.
+Si teniu un compte de Raspberry Pi, podeu fer clic a **Desa** per desar una còpia del codi d'inici a la vostra biblioteca.
 
-![A bar chart showing the medals won by the United States, Great Britain, and France.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/short_list.png)
+Si no utilitzeu l'editor de codi al vostre navegador, haureu de descarregar els fitxers del projecte i és possible que hàgiu d'instal·lar-lo `pygal`abans de poder-lo importar.
 
-Open the [Charting champions starter project](https://editor.raspberrypi.org/en/projects/charting-champions-starter). The Raspberry Pi code editor will open in another browser tab.
+### Fitxers de projecte fora de línia
 
-If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+### Instal·lació de pygal
 
-If you are not using the code editor in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
-
-### Offline project files
-
-### Installing pygal
-
-The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
+El projecte inicial ja té algun codi per importar la `pygal`biblioteca, que utilitzareu per dibuixar el vostre gràfic.
 
 main.py
 
@@ -38,9 +34,9 @@ main.py
 from pygal import bar
 ```
 
-### Make a chart
+### Fes un gràfic
 
-Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`, inside the brackets give your chart a title.
+Cerqueu el `# Create a chart`comentari i afegiu el codi a sota per fer un gràfic de barres anomenat `chart`, dins dels claudàtors, doneu un títol al vostre gràfic.
 
 main.py
 
@@ -48,7 +44,7 @@ main.py
 # Create a chart chart = Bar(title='Olympic medals')
 ```
 
-Call `chart.render()` to display the chart.
+Truqueu `chart.render()`per mostrar el gràfic.
 
 main.py
 
@@ -56,24 +52,24 @@ main.py
 # Display the chart chart.render()
 ```
 
-**Test:** Run your code to see the chart. It will be empty because it doesn’t have data yet.
+**Prova:** executeu el vostre codi per veure el gràfic. Estarà buit perquè encara no té dades.
 
-![The words 'Olympic medals' on a black background.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/empty_chart.png)
+![Les paraules "medalles olímpiques" sobre fons negre.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/empty_chart.png)
 
-**Debug**: If you see an error about `Bar()` or `chart.render()` being `not defined`:
+**Depuració** : si veieu un error sobre `Bar()`o `chart.render()`sobre `not defined`:
 
--   If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end
--   If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end
+-   Si l'error és per a `Bar()`, assegureu-vos que té una B majúscula al començament i claudàtors al final
+-   Si l'error és per a `chart.render()`, comproveu que tingui `.`entre `chart`i `render`, així com els claudàtors al final
 
-**Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn’t appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
+**Depuració** : si no utilitzeu l'editor de codi Raspberry Pi i el gràfic no ha aparegut quan executeu el codi, substituïu-lo `chart.render()`per `chart.render_in_browser()`.
 
-### Add some data
+### Afegeix algunes dades
 
-Python can store related data as a **list**. You can create lists by using square brackets `[]`. Items in a list are separated with commas.
+Python pot emmagatzemar dades relacionades com una **llista** . Podeu crear llistes utilitzant claudàtors `[]`. Els elements d'una llista es separen amb comes.
 
-Create three lists of data to show on your chart.
+Creeu tres llistes de dades per mostrar-les al vostre gràfic.
 
-Each list will store a nation’s name and the number of medals won by that nation.
+Cada llista emmagatzemarà el nom d'una nació i el nombre de medalles guanyades per aquesta nació.
 
 main.py
 
@@ -81,11 +77,11 @@ main.py
 # Add data to the chart us = ['United States', 2399] gb = ['Great Britain', 1304] fr = ['France', 751]
 ```
 
-When you store something in a list, it gets an **index**. An index is a number that tells you an item’s position in a list. List indexes start from `0`, instead of `1`.
+Quan emmagatzemeu alguna cosa en una llista, obté un **índex** . Un índex és un número que indica la posició d'un element en una llista. Els índexs de llista comencen de `0`, en lloc de `1`.
 
-You can get an item from a list by its index. For example, `my_list[3]` will get the **fourth** item in `my_list`, because indexes start at `0`.
+Podeu obtenir un element d'una llista pel seu índex. Per exemple, `my_list[3]`obtindrà el **quart** element a `my_list`, perquè els índexs comencen a `0`.
 
-Use the indexes of your lists and `chart.add()` to display your data. The nation’s name at item 0 will be used as a category label for the chart and the amount of medals at item 1 will determine the height of the bar.
+Utilitzeu els índexs de les vostres llistes i `chart.add()`per mostrar les vostres dades. El nom de la nació a l'element 0 s'utilitzarà com a etiqueta de categoria per al gràfic i la quantitat de medalles a l'element 1 determinarà l'alçada de la barra.
 
 main.py
 
@@ -93,16 +89,16 @@ main.py
 gb = ['Great Britain', 1304] chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1])
 ```
 
-**Test:** Run your code to see the chart.
+**Prova:** executeu el vostre codi per veure el gràfic.
 
-![A bar chart showing the medals won by the United States, Russia, and Great Britain.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/short_list.png)
+![Un gràfic de barres que mostra les medalles guanyades pels Estats Units, Rússia i la Gran Bretanya.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/short_list.png)
 
-**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn’t exist (e.g. `us[2]`). To fix this:
+**Depuració** : si veieu un missatge sobre un `IndexError`, el vostre codi està intentant obtenir un valor d'un índex de llista que no existeix (p. ex. `us[2]`). Per solucionar això:
 
--   Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
--   Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+-   Comproveu cadascuna de les vostres `chart.add`línies per assegurar-vos que només utilitzeu `0`i `1`com a índexs.
+-   Comproveu les línies on heu creat les vostres llistes. Assegureu-vos que cada llista té dos elements, separats per una coma.
 
-Now load two more teams by adding new lists and `chart.add()` calls.
+Ara carrega dos equips més afegint llistes i `chart.add()`trucades noves.
 
 main.py
 
@@ -110,48 +106,43 @@ main.py
 # Add data to the chart us = ['United States', 2399] gb = ['Great Britain', 1304] fr = ['France', 751] ge = ['Germany', 655] ch = ['China', 636] chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1]) chart.add(ge[0], ge[1]) chart.add(ch[0], ch[1])
 ```
 
-**Test:** Run your code to see the updated chart. Try clicking on the United States’ name. Then watch the scale of the chart change.
+**Prova:** executeu el vostre codi per veure el gràfic actualitzat. Intenta fer clic al nom dels Estats Units. A continuació, observeu el canvi d'escala del gràfic.
 
-![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/short_list_2.gif)
+![Un gràfic de barres que mostra les medalles guanyades pels Estats Units, la Gran Bretanya, França, Alemanya i la Xina. Quan es fa clic al nom dels Estats Units, la barra més alta desapareix del gràfic, que canvia la mida.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/short_list_2.gif)
 
-**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn’t exist (e.g. `fr[2]`). To fix this:
+**Depuració** : si veieu un missatge sobre un `IndexError`, el vostre codi està intentant obtenir un valor d'un índex de llista que no existeix (p. ex. `fr[2]`). Per solucionar això:
 
--   Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
--   Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+-   Comproveu cadascuna de les vostres `chart.add`línies per assegurar-vos que només utilitzeu `0`i `1`com a índexs.
+-   Comproveu les línies on heu creat les vostres llistes. Assegureu-vos que cada llista té dos elements, separats per una coma.
+## Carregar dades d'un fitxer
 
-### Save your project
+El gràfic té bona pinta! Però, gairebé 150 nacions han competit als Jocs Olímpics. Per dibuixar-los, carregareu les seves dades des d'un fitxer. Estalviarà molt d'escriptura!
 
-[](https://projects.raspberrypi.org/en/projects/charting-champions/0)[Load data from a file](https://projects.raspberrypi.org/en/projects/charting-champions/2)
+![Un gràfic de barres que mostra el recompte de medalles de moltes nacions. La informació apareix quan el ratolí passa per sobre d'una barra. Les barres desapareixen quan es fa clic als noms de les nacions.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/adjust_chart.gif)
 
-## Load data from a file
+**Ordinadors i dades** Tot just esteu començant a aprendre a fer que el vostre ordinador funcioni amb dades. Els ordinadors poden fer coses sorprenents amb les dades adequades. I poden llegir més dades en minuts que un humà en anys. Python és un dels millors llenguatges de programació que hi ha per a dades. Python és el que fa l'algoritme de YouTube, que tria els vídeos per mostrar-vos.
 
-The chart looks good! But, almost 150 nations have competed in the Olympics. To chart them, you’re going to load their data from a file. It will save a lot of typing!
+Obriu el [segon projecte inicial](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter) . L'editor de codi Raspberry Pi s'obrirà en una altra pestanya del navegador.
 
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/adjust_chart.gif)
+Si teniu un compte de Raspberry Pi, podeu fer clic a **Desa** per desar una còpia del codi d'inici a la vostra biblioteca.
 
-**Computers and data** You’re just starting to learn how to get your computer work with data. Computers can do amazing things with the right data. And they can read more data in minutes than a human could in years. Python is one of the best programming languages there is for data. Python is what the YouTube algorithm, that picks the videos to show you, is made with.
+### Treballant fora de línia
 
-Open the [second starter project](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter). The Raspberry Pi code editor will open in another browser tab.
+Hi ha diversos `.csv`fitxers inclosos en aquest projecte inicial que contenen les dades que necessiteu per als vostres gràfics.
 
-If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+Obriu `medals.csv`i mireu les dades que hi ha. Vegeu com cada línia té un nom d'equip i el nombre de medalles que ha guanyat, separats per una coma.
 
-### Working offline
+![L'editor de codi de Raspberry Pi amb el fitxer de medalles ressaltat i obert, que mostra una llista de països i números de medalles separats amb una coma.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/medals-tab.png)
 
-There are several `.csv` files included in this starter project that contain the data you need for your charts.
+**Els fitxers CSV** són fitxers de valors separats per comes. Contenen dades en files i columnes, com una taula. Cada línia és una fila, amb comes que separen els valors d'aquesta fila en columnes. ![Unes quantes línies d'un fitxer csv.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/csv_sample.png)
 
-Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma.
+Haureu de convertir cada línia de `medals.csv`en una cadena de text i un número a Python, com a les llistes que heu fet.
 
-![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/medals-tab.png)
+Feu clic a la `main.py`pestanya i afegiu codi per carregar el fitxer en una variable mitjançant `with open() as`. A continuació, utilitzeu un `for`bucle a `print`cada línia de la variable.
 
-**CSV files** are Comma-Separated Values files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row’s values into columns. ![A few lines of a csv file.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/csv_sample.png)
+El `for`bucle us permetrà repetir el codi. Així que carregaràs centenars d'equips al teu gràfic amb només unes poques línies de codi!
 
-You’ll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
-
-Click on the `main.py` tab and add code to load the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
-
-The `for` loop will let you repeat code. So you will load hundreds of teams to your chart with just a few lines of code!
-
-### Read a file with Python
+### Llegir un fitxer amb Python
 
 main.py
 
@@ -159,21 +150,21 @@ main.py
 # Add data to the chart with open('medals.csv') as f: for line in f: print(line)
 ```
 
-**Test:** Run your code and look at the text it prints out.
+**Prova:** executeu el vostre codi i mireu el text que imprimeix.
 
-Notice that each line has two values, separated by commas.
+Observeu que cada línia té dos valors, separats per comes.
 
-![A list of text strings, printed out over many lines.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/lines.png)
+![Una llista de cadenes de text, impresa en moltes línies.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/lines.png)
 
-**Debug:** If the code doesn’t work, make sure you have indented it under the `with` line, like in the example above.
+**Depuració:** si el codi no funciona, assegureu-vos d'haver-lo sagnat sota la `with`línia, com a l'exemple anterior.
 
-Each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
+Cada cadena que imprimeix el vostre bucle està formada per dues peces separades per una coma. La vostra `chart.add()`funció necessita cadascuna d'aquestes peces com a entrades separades.
 
-The `split()` function breaks a string into a list, just like the lists you made earlier. The `split(',')` function makes a new list item every time it sees a comma.
+La `split()`funció divideix una cadena en una llista, igual que les llistes que heu fet anteriorment. La `split(',')`funció crea un nou element de llista cada vegada que veu una coma.
 
-Put a `#` in front of the code that prints `line`. This will turn that code into a comment, so Python will ignore it.
+Posa una `#`al davant del codi que s'imprimeix `line`. Això convertirà aquest codi en un comentari, de manera que Python l'ignorarà.
 
-Use the `split()` method to break up each sting at a `,` and then store the first and second pieces in a new list. Then print those lists out.
+Utilitzeu el `split()`mètode per dividir cada picada en a `,`i després emmagatzemar la primera i la segona peces en una llista nova. A continuació, imprimiu aquestes llistes.
 
 main.py
 
@@ -181,17 +172,17 @@ main.py
 with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',') # Breaks the string into a list print(pieces) # Print each list
 ```
 
-**Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
+**Consell:** `split()` podeu dividir una cadena en una llista al voltant de qualsevol text que vulgueu. Podeu dividir la puntuació, una lletra o fins i tot paraules senceres.
 
-**Test:** Run your code and look at the text it prints out. Each line should be a list with two items. You may notice that the second item has `\n` at the end. `\n` is usually invisible. It tells the computer it has reached the end of the line in a file.
+**Prova:** executeu el vostre codi i mireu el text que imprimeix. Cada línia hauria de ser una llista amb dos elements. Podeu notar que el segon element té `\n`al final. `\n`sol ser invisible. Indica a l'ordinador que ha arribat al final de la línia d'un fitxer.
 
-![Many lists, each with two items, printed out.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/tally.png)
+![Moltes llistes, cadascuna amb dos elements, impreses.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/tally.png)
 
-**Debug:** If your `pieces` are printing out as lists with only one item then check that you have `','` in the `()` of `line.split()`.
+**Depuració:** si `pieces`esteu imprimint com a llistes amb només un element, comproveu que teniu `','`a `()`la `line.split()`.
 
-**Debug:** If you see a message about `split` being ‘not defined’, check that you have included `line.` before it.
+**Depuració:** si veieu un missatge sobre `split`"no definit", comproveu que l'heu inclòs `line.`abans.
 
-Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
+Carregueu les vostres dades al gràfic com a part del vostre `for`bucle. `team`és una cadena per la qual cosa es pot utilitzar com a etiqueta al gràfic. `medal`actualment és una cadena, però s'ha de convertir en un número. Podeu utilitzar la `int()`funció per **llançar** una cadena a un número.
 
 main.py
 
@@ -199,46 +190,43 @@ main.py
 with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] medals = pieces[1] chart.add(team, int(medals)) # Make medals a number
 ```
 
-**Tip:** You can now use `#` to turn `print(pieces)` into a comment too.
+**Consell:** ara també podeu utilitzar `#`per convertir-lo `print(pieces)`en un comentari.
 
-**Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
+**Prova:** executeu el vostre codi i mireu el gràfic que crea. Proveu de passar el cursor per sobre d'algunes de les barres o feu clic als noms dels equips per afegir-los i eliminar-los del gràfic.
 
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/adjust_chart.gif)
+![Un gràfic de barres que mostra el recompte de medalles de moltes nacions. La informació apareix quan el ratolí passa per sobre d'una barra. Les barres desapareixen quan es fa clic als noms de les nacions.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/adjust_chart.gif)
 
-**Debug:** If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
+**Depuració:** si el vostre gràfic està buit, comproveu que teniu `int(medals)`al vostre `chart.add()`.
 
-**Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn’t exist (e.g. `pieces[2]`). To fix this:
+**Depuració:** si veieu un missatge sobre un `IndexError`, el vostre codi està intentant obtenir un valor d'un índex de llista que no existeix (p. ex. `pieces[2]`). Per solucionar això:
 
--   Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
--   Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don’t, then check that you have `','` in the `()` of `line.split()`.
--   Check you do not have a blank line at the bottom of your .csv file.
+-   Comproveu cadascuna de les vostres variables `team`i `medals`per assegurar-vos que només utilitzeu `0`i `1`com a índexs.
+-   Comproveu les `pieces`llistes impreses per assegurar-vos que tenen dos elements: `['Tonga', '1\n']`, no `['Tonga,1\n']`. Si no ho fan, comproveu que teniu `','`a la `()`de `line.split()`.
+-   Comproveu que no teniu cap línia en blanc a la part inferior del fitxer .csv.
 
-### Save your project
+## Investiga amb dades
 
-[](https://projects.raspberrypi.org/en/projects/charting-champions/1)[Investigate with data](https://projects.raspberrypi.org/en/projects/charting-champions/3)
-## Investigate with data
+Ara el vostre programa pot dibuixar gràfics a partir de fitxers de dades. Podeu utilitzar-lo en diferents fitxers per comparar els seus gràfics i veure què podeu aprendre.
 
-Now your program can draw charts from files of data. You can use it on different files to compare their charts to see what you can learn.
+![Un gràfic de barres que mostra les poblacions de moltes nacions. La informació apareix quan el ratolí passa per sobre d'una barra. Les barres desapareixen quan es fa clic als noms de les nacions.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/adjust_chart.gif)
 
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/adjust_chart.gif)
+### Qui té més medalles?
 
-### Who has the most medals?
+Mira el gràfic que has fet. Com més alta sigui una barra, més medalles ha guanyat aquest equip. Passeu el ratolí per sobre d'algunes de les barres més altes i observeu a quins equips pertanyen.
 
-Look at the chart you’ve made. The taller a bar is, the more medals that team has won. Hover the mouse over some of the tallest bars and notice which teams they belong to.
+![Un gràfic de barres que mostra les poblacions de moltes nacions. La informació apareix quan el ratolí passa per sobre d'una barra. Les barres desapareixen quan es fa clic als noms de les nacions.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/adjust_chart.gif)
 
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/adjust_chart.gif)
+Per què podrien tenir més medalles?
 
-Why might they have the most medals?
+Una bona idea podria ser mirar tant la població com la riquesa dels equips, per veure si hi ha algun tipus de patró.
 
-A good idea might be to look at both the population and wealth of teams, to see if there is any sort of pattern.
+**Anàlisi de dades:** la gent ha fet aquest tipus d'investigacions des de molt abans que s'inventessin els ordinadors. Per exemple, a la dècada de 1850, Florence Nightingale, una infermera, va utilitzar gràfics i gràfics per mostrar la importància de la prevenció de malalties per atendre els malalts. ![Carta de causes de mortalitat de Florence Nightingale.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/nightingale.jpeg)
 
-**Data analysis:** People have done these kinds of investigations since long before computers were invented. For example, in the 1850s, Florence Nightingale, a nurse, used charts and graphs to show the importance of disease prevention in caring for the sick. ![Florence Nightingale's chart of causes of mortality.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/nightingale.jpeg)
+### Mides de la població
 
-### Population sizes
+Un fitxer, anomenat `pop.csv`, amb dades sobre les poblacions de diferents països, forma part del projecte d'arrencada. Com que les dades `pop.csv`també estan formades per una cadena de text i un número, podeu reutilitzar el vostre codi només amb petits canvis.
 
-A file, called `pop.csv`, with data on the populations of different countries, is part of the starter project. Because the data in `pop.csv` is also made up of a text string and a number, you can re-use your code with only small changes.
-
-Change the chart title, the `width` of the chart, the file you are opening, and the category name to draw a chart based on the population data in `pop.csv`.
+Canvieu el títol del gràfic, la `width`del gràfic, el fitxer que esteu obrint i el nom de la categoria per dibuixar un gràfic a partir de les dades de població a `pop.csv`.
 
 main.py
 
@@ -246,21 +234,21 @@ main.py
 chart = Bar(title='Population', width='600') # Add data to the chart with open('pop.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] population = pieces[1] chart.add(team, int(population)) # Make population a number
 ```
 
-Now run your program and look at the chart it draws.
+Ara executeu el vostre programa i mireu el gràfic que dibuixa.
 
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/pop.gif)
+![Un gràfic de barres que mostra les poblacions de moltes nacions. La informació apareix quan el ratolí passa per sobre d'una barra. Les barres desapareixen quan es fa clic als noms de les nacions.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/pop.gif)
 
-Hover the mouse over the biggest bars and notice which countries they belong to. Click the names of the really big ones to remove them from the chart; that will let you get a closer look at the others. Do any of the countries with lots of people have a large number of medals?
+Passeu el ratolí per sobre de les barres més grans i observeu a quins països pertanyen. Feu clic als noms dels més grans per eliminar-los del gràfic; això us permetrà veure de prop els altres. Algun dels països amb molta gent té un gran nombre de medalles?
 
-### Wealth
+### Riquesa
 
-A file called `gdp.csv` is part of the starter project. It has data on the annual GDP of different countries. Just like with `pop.csv`, you’ll only need to make small changes to use it.
+Un fitxer anomenat `gdp.csv`forma part del projecte inicial. Té dades sobre el PIB anual de diferents països. Igual que amb `pop.csv`, només haureu de fer petits canvis per utilitzar-lo.
 
-**GDP** is the Gross Domestic Product. It measures the value, in money, of everything produced in an area over a given time period. It can measure how rich an area is.
+**El PIB** és el Producte Interior Brut. Mesura el valor, en diners, de tot el que es produeix en una àrea durant un període de temps determinat. Pot mesurar la riquesa d'una zona.
 
-Change the chart title, the file you are opening, and the category name to draw a chart based on the GDP data in `gdp.csv`.
+Canvieu el títol del gràfic, el fitxer que esteu obrint i el nom de la categoria per dibuixar un gràfic a partir de les dades del PIB a `gdp.csv`.
 
-The `gdp.csv` file stores the GDP as decimal numbers. Update the type from `int` to `float` so that the numbers are in the correct format.
+El `gdp.csv`fitxer emmagatzema el PIB com a nombres decimals. Actualitzeu el tipus de `int`a `float`perquè els números tinguin el format correcte.
 
 main.py
 
@@ -268,53 +256,52 @@ main.py
 chart.title = 'GDP' # Add data to the chart with open('gdp.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] gdp = pieces[1] chart.add(team, float(gdp)) # Make GDP a number
 ```
 
-Now run your program and look at the chart it draws.
+Ara executeu el vostre programa i mireu el gràfic que dibuixa.
 
-![A bar chart showing the GDP of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/gdp.gif)
+![Un gràfic de barres que mostra el PIB de moltes nacions. La informació apareix quan el ratolí passa per sobre d'una barra. Les barres desapareixen quan es fa clic als noms de les nacions.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/gdp.gif)
 
-Hover the mouse over the biggest bars and notice which countries they belong to. Click the names of the really big ones to remove them from the chart; that will let you take a closer look at the others. Did any of the richest countries’ teams have very large numbers of medals?
+Passeu el ratolí per sobre de les barres més grans i observeu a quins països pertanyen. Feu clic als noms dels més grans per eliminar-los del gràfic; això us permetrà mirar més de prop els altres. Algun dels equips dels països més rics va tenir un gran nombre de medalles?
 
-### What did you find?
+### Què has trobat?
 
-What did you discover by using your program to look at this data?
+Què vas descobrir utilitzant el teu programa per mirar aquestes dades?
 
--   There are some signs that the number of people a team has to choose from helps it earn medals.
--   But population doesn’t explain how countries like France have so many medals. Or why India doesn’t have as many medals as China or the USA.
--   Money seems to explain more. Most of the countries that have lots of medals have high GDPs too.
--   Neither of them explains everything. There are teams that don’t follow this pattern.
+-   Hi ha alguns indicis que el nombre de persones que ha de triar un equip l'ajuda a guanyar medalles.
+-   Però la població no explica com països com França tenen tantes medalles. O per què l'Índia no té tantes medalles com la Xina o els EUA.
+-   Els diners sembla que expliquen més. La majoria dels països que tenen moltes medalles també tenen un PIB elevat.
+-   Cap dels dos ho explica tot. Hi ha equips que no segueixen aquest patró.
 
-### Jamaica does better than bigger and richer countries
+### Jamaica ho fa millor que els països més grans i rics
 
-So there’s more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so?
+Així que hi ha més coses per guanyar medalles olímpiques que només persones i diners. Què més podria ser? Quines altres idees podríeu provar i quin tipus de dades necessitaríeu per fer-ho?
 
-[](https://projects.raspberrypi.org/en/projects/charting-champions/2)[Quick quiz](https://projects.raspberrypi.org/en/projects/charting-champions/4)
-## Upgrade your project
+[](https://projects.raspberrypi.org/en/projects/charting-champions/2)[Test ràpid](https://projects.raspberrypi.org/en/projects/charting-champions/4)
 
-In this step, change how your chart looks, or what data it uses.
+## Actualitza el teu projecte
 
-![A pie chart showing the running time of Marvel films.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/mcu_pie.png)
+En aquest pas, canvieu l'aspecte del vostre gràfic o quines dades utilitza.
 
-### Use a pie chart
+![Un gràfic circular que mostra el temps d'execució de les pel·lícules de Marvel.](https://projects-static.raspberrypi.org/projects/charting-champions/f398fe0d97a7a8fdcd3d233b684b75f2b244ce41/en/images/mcu_pie.png)
 
-Try using a pie chart for a different look, or to show how something is divided.
+### Utilitzeu un gràfic circular
 
-To create a pie chart instead of a bar chart, change the import from `pygal` to `Pie` instead of `Bar`. Do the same for the function you call to create `chart`.
+Proveu d'utilitzar un gràfic circular per a un aspecte diferent o per mostrar com es divideix alguna cosa.
 
-### Use a different set of data
+Per crear un gràfic circular en lloc d'un gràfic de barres, canvieu la importació de `pygal`a `Pie`en lloc de `Bar`. Feu el mateix per a la funció que crideu per crear `chart`.
 
-You can load and chart any data that’s in a `.csv` file with the program you’ve written.
+### Utilitzeu un conjunt de dades diferent
 
-**Choose:** Pick a different datafile for your project. There are two available:
+Podeu carregar i dibuixar qualsevol dada que hi hagi en un `.csv`fitxer amb el programa que heu escrit.
 
--   `mcu.csv` is the runtime and gross income from the Marvel Cinematic Universe films
--   `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
+**Trieu:** Trieu un fitxer de dades diferent per al vostre projecte. N'hi ha dos disponibles:
 
-Update the code that reads from `medals.csv` to read from your new file.
+-   `mcu.csv`és el temps d'execució i els ingressos bruts de les pel·lícules de Marvel Cinematic Universe
+-   `carbon.csv`és el total (milers de tones) i les emissions de diòxid de carboni per persona (tones) de diferents països i regions
 
-These files have more than one column of numbers. Use indexes on the `tally` list to choose which to add to your chart.
+Actualitzeu el codi que llegeix de `medals.csv`per llegir des del vostre fitxer nou.
 
-The carbon dioxide data uses numbers with decimals. To convert them from text strings, you’ll need to use `float()` instead of `int()`.
+Aquests fitxers tenen més d'una columna de números. Utilitzeu els índexs de la `tally`llista per triar quins voleu afegir al vostre gràfic.
 
-### Completed project
+Les dades de diòxid de carboni utilitzen números amb decimals. Per convertir-los a partir de cadenes de text, haureu d'utilitzar `float()`en comptes de `int()`.
 
-### Save your project
+### Projecte acabat
