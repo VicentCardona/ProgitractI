@@ -19,9 +19,9 @@ Per començar, recollireu informació sobre Mercuri i dibuixareu la seva òrbita
 
 ![Un fons negre amb un cercle groc, envoltat per un anell blanc.](https://projects-static.raspberrypi.org/projects/solar-system-simulator/7daa045501b7dc7919107b0b723ec7dc7e5a4abe/en/images/mercury_orbit.png)
 
-Obriu el [projecte d'inici del sistema solar](https://editor.raspberrypi.org/en/projects/solar-system-starter) . L'editor de codi Raspberry Pi s'obrirà en una altra pestanya del navegador.
+Obriu el projecte "Sistema Solar" . L'editor de codi Raspberry Pi s'obrirà en una altra pestanya del navegador.
 
-Si teniu un compte de Raspberry Pi, podeu fer clic al **botó Desa** per desar una còpia a la vostra `Projects`biblioteca.
+
 
 ### Fes un diccionari
 
@@ -29,7 +29,7 @@ Els diccionaris de Python us permeten buscar una **clau** i obtenir-ne el **valo
 
 ### Diccionaris Python
 
-Trobeu el `# load_planets function`comentari al projecte inicial. Creeu la funció a sota del comentari. Dins de la funció, feu un `mercury`diccionari global. A continuació, afegeix informació sobre Mercuri al diccionari.
+Trobeu el comentari`# funció carregar_planetes o load_planets`comentari al projecte inicial. Creeu la funció a sota del comentari. Dins de la funció, feu un diccionari `mercury` global. A continuació, afegeix informació sobre Mercuri al diccionari.
 
 | clau | Valor |
 | --- | --- |
@@ -42,13 +42,14 @@ Trobeu el `# load_planets function`comentari al projecte inicial. Creeu la funci
 
 Els claudàtors `{}`s'utilitzen per començar i acabar el diccionari. Els dos punts `:`s'utilitzen per separar la clau i els valors. `,`S'utilitza una coma per separar cada element del diccionari.
 
-main.py — load\_planets()
-
 ```python
-# load_planets function def load_planets(): global mercury mercury = { 'name': 'Mercury', 'colour': Color(165, 42, 42), 'size': 15, 'orbit': 150, 'speed': 1, 'info': 'The smallest and fastest planet.' }
+# funció carrega planetes
+def load_planets():
+    global mercury mercury ={
+     'name': 'Mercury', 'colour': Color(165, 42, 42), 'size': 15,     'orbit': 150, 'speed': 1, 'info': 'The smallest and fastest         planet.' }
 ```
 
-**Consell:** podeu posar cada `key: value`parell a la seva pròpia línia. Això fa que el codi sigui més fàcil de llegir, però assegureu-vos de mantenir-lo tot dins dels claudàtors `{}`.
+**Consell:** podeu posar cada parell `key: value` a la seva pròpia línia. Això fa que el codi sigui més fàcil de llegir, però assegureu-vos de mantenir-lo tot dins dels claudàtors `{}`.
 
 L'ús d'un diccionari us permet conservar tota la informació sobre Mercuri en un sol lloc. Això fa que sigui més fàcil trobar-lo i canviar-lo si cal.
 
@@ -70,13 +71,16 @@ Busca el `#draw_orbits function`comentari. Creeu la `draw_orbits()`funció a sot
 
 ### Dibuixa una el·lipse
 
-main.py — draw\_orbits()
-
 ```python
-# draw_orbits function def draw_orbits(): no_fill() stroke(255) # Make it white ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
+# draw_orbits function
+def draw_orbits():
+    no_fill()
+    stroke(255)
+    # Make it white
+    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
 ```
 
-Truqueu la vostra `draw_orbits()`funció des de la vostra `draw()`funció.
+Exeuteu la vostra funció `draw_orbits()` des de la vostra funció `draw()`
 
 main.py — dibuixa()
 
