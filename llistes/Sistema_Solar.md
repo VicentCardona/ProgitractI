@@ -10,9 +10,9 @@ Aquest model utilitza l'ordre dels planetes i les seves velocitats i mides. Per�
 -   Utilitzar **diccionaris** per emmagatzemar i cercar dades
 -   Carregar dades d'un fitxer als **diccionaris**
 -   Crear un model animat i interactiu del sistema solar mitjançant la biblioteca `p5`.
---------------------
+
 **Diccionaris:** quan feu un diccionari de Python, emmagatzema coses que podeu cercar més tard. Això s'assembla molt a un diccionari normal. Però la versió de Python pot emmagatzemar molt més que els significats de les paraules!
------------
+
 ## Crear un diccionari
 
 Per començar, recollireu informació sobre Mercuri i dibuixareu la seva òrbita.
@@ -21,15 +21,38 @@ Per començar, recollireu informació sobre Mercuri i dibuixareu la seva òrbita
 
 Obriu el projecte "Sistema Solar" . L'editor de codi Raspberry Pi s'obrirà en una altra pestanya del navegador.
 
-
-
 ### Fes un diccionari
 
 Els diccionaris de Python us permeten buscar una **clau** i obtenir-ne el **valor** . Això podria ser una paraula i el seu significat, que són tots dos text. Però també podeu utilitzar una clau de text (com ara `'distance'`) per obtenir un valor que sigui un número, o qualsevol altra cosa que pugueu emmagatzemar a Python.
+<details>
+<summary>Diccionaris Python</summary>
+<br>
+Un diccionari de Python emmagatzema parells de **claus** i **valors** .
 
-### Diccionaris Python
+Les claus i els valors poden ser gairebé qualsevol valor que pugueu emmagatzemar a Python. Encara que les llistes i els diccionaris no poden ser claus.
 
-Trobeu el comentari`# funció carregar_planetes o load_planets`comentari al projecte inicial. Creeu la funció a sota del comentari. Dins de la funció, feu un diccionari `mercury` global. A continuació, afegeix informació sobre Mercuri al diccionari.
+Podeu utilitzar una clau per obtenir el seu valor associat.
+
+Per fer un diccionari, feu servir claudàtors `{}`, amb `key: value`parells dins. Un parell és una clau, seguida de dos punts ( `:`), seguit del valor connectat a aquesta clau. Per exemple:
+
+```python
+persona = {
+    'edat': 12,
+    'altura': 149.5,
+    'cabell': 'marró',
+}
+```
+
+Aquí, `edat`, `altura`, i `cabell`són claus. Podeu utilitzar-los per buscar els seus valors entre claudàtors `[]`. Per exemple:
+
+```python
+print(persona['cabell'])
+```
+
+Això imprimirà el valor `marró`.
+</details>
+
+Trobeu el comentari `# funció carregar_planetes` al projecte inicial. Creeu la funció a sota del comentari. Dins de la funció, feu un diccionari `mercuri` global (es pot fer servir la variable fora de la funció). A continuació, afegeix informació sobre Mercuri al diccionari.
 
 | clau | Valor |
 | --- | --- |
@@ -40,16 +63,23 @@ Trobeu el comentari`# funció carregar_planetes o load_planets`comentari al proj
 | velocitat | 1 |
 | informació | El planeta més petit i ràpid. |
 
-Els claudàtors `{}`s'utilitzen per començar i acabar el diccionari. Els dos punts `:`s'utilitzen per separar la clau i els valors. `,`S'utilitza una coma per separar cada element del diccionari.
+Els claudàtors `{}` s'utilitzen per començar i acabar el diccionari. Els dos punts `:`s'utilitzen per separar la clau i els valors. `,`S'utilitza una coma per separar cada element del diccionari.
 
 ```python
-# funció carrega planetes
 def load_planets():
-    global mercury mercury ={
-     'name': 'Mercury', 'colour': Color(165, 42, 42), 'size': 15,     'orbit': 150, 'speed': 1, 'info': 'The smallest and fastest         planet.' }
+    global mercuri
+
+    mercuri = {
+        'nom': 'mercuri',
+        'colo': Color(165, 42, 42),
+        'tamany': 15,
+        'orbita': 150,
+        'velocitat': 1,
+        'info': 'El planeta més petit i més veloç'
+    }
 ```
 
-**Consell:** podeu posar cada parell `key: value` a la seva pròpia línia. Això fa que el codi sigui més fàcil de llegir, però assegureu-vos de mantenir-lo tot dins dels claudàtors `{}`.
+**Consell:** podeu posar cada parell `clau: valor` a la seva pròpia línia. Això fa que el codi sigui més fàcil de llegir, però assegureu-vos de mantenir-lo tot dins de les claus`{}`.
 
 L'ús d'un diccionari us permet conservar tota la informació sobre Mercuri en un sol lloc. Això fa que sigui més fàcil trobar-lo i canviar-lo si cal.
 
