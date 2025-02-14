@@ -36,9 +36,9 @@ La funció `draw()` executa contínuament les línies de codi contingudes dins d
 
 **Tria:** penseu en els colors que utilitzareu per al vostre art i creeu algunes variables que mantinguin els valors de color al començament de `draw()`.
 
-<details open>
-<summary>Colors RGB</summary>
-<br>
+
+###Colors RGB###
+
 Quan volem representar un color en un programa informàtic, ho podem fer definint les quantitats de vermell, blau i verd que es combinen per formar aquest color. Aquestes quantitats s'emmagatzemen com un nombre entre 0 i 255.
 
 ![Colors RGB](https://projects-static.raspberrypi.org/projects/generic-theory-simple-colours/e102ecbfc666027d84ac6517bb5819f012b8dd00/en/images/RGB.gif)
@@ -58,21 +58,17 @@ Podeu trobar un bon [selector de colors per jugar a w3schools](https://www.w3sch
 
 També podeu utilitzar alguna utilitat com el [dissenyador d'esquemes de colors Paletton](https://paletton.com/) per triar la vostra paleta de colors i copiar els valors RGB.
 
-</details>
+###Colors a p5
 
-<details open>
-<summary>Colors a p5</summary>
-<br>
 La funció `Color()` espera 3 nombres. un per a vermell, verd i blau.
    ``` python
    blue = Color(50, 70, 206) #Vermell = 50, Verd = 70, Blau = 206
-</details>
+```
 
 **Crea** una funció que **dibuixi** la forma de fons amb la vostra paleta de colors. A continuació, afegiu una trucada a la vostra funció `draw()`.
 
-<details open>
-<summary>Establiu els colors de fons quan s'iniciï el programa</summary>
-<br>
+### Establiu els colors de fons quan s'iniciï el programa
+
 A sobre de la funció `draw()`, definiu una nova cridada a la funció `draw_background()` i creeu-hi una trucada a `draw()`, després d'una trucada a no_stroke().
 
 main.py - draw_background()
