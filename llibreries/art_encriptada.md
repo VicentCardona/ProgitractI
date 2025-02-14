@@ -37,7 +37,7 @@ La funció `draw()` executa contínuament les línies de codi contingudes dins d
 **Tria:** penseu en els colors que utilitzareu per al vostre art i creeu algunes variables que mantinguin els valors de color al començament de `draw()`.
 
 
-###Colors RGB###
+###Colors RGB
 
 Quan volem representar un color en un programa informàtic, ho podem fer definint les quantitats de vermell, blau i verd que es combinen per formar aquest color. Aquestes quantitats s'emmagatzemen com un nombre entre 0 i 255.
 
@@ -121,7 +121,6 @@ def draw():
 
     no_stroke()
     draw_background(verd, blau)
-</details>
 ```
 
 
@@ -151,9 +150,8 @@ Aquí teniu algunes idees:
 **Definiu** cada funció de forma en preparació per afegir el codi que es necessitarà per dibuixar cada forma. Assegureu-vos de definir les vostres funcions de forma **per sobre de** la vostra `draw()`funció.
 
 
-<details open>
-<summary>Definiu les vostres funcions</summary>
-<br>
+Definiu les vostres funcions
+
 Pots definir les funcions de la següent manera:
 
 main.py
@@ -164,7 +162,7 @@ def forma_2():
 
 def forma_3():
 ```
-</details>
+
 
 Decidiu quins **paràmetres** necessitaran les vostres funcions. Aquí teniu algunes idees:
 
@@ -174,9 +172,9 @@ Decidiu quins **paràmetres** necessitaran les vostres funcions. Aquí teniu alg
 
 
 **Afegeix** els **paràmetres** escocllits dintre dels parèntesis per a cada funció de **forma**
-<details open>
-<summary>Afegeix paràmetres a la teva funció</summary>
-<br>
+
+Afegeix paràmetres a la teva funció
+
 Pots afegir paràmetres a les funcions de la següent manera:
 
 main.py
@@ -187,7 +185,6 @@ def forma_2(tamany, contorn):
 
 def forma_3(objecte, color):
 ```
-</details>
 
 **Afegiu** el codi per a cadascuna de les vostres funcions de forma de manera que el dibuix o la imatge aparegui quan es **cridi** la funció .
 
