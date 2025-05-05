@@ -41,12 +41,12 @@ Amb `SELECT` tries quines **columnes** (quina informació específica) vols veur
 
 * **`SELECT *`**: L'asterisc (`*`) és el comodí "ensenya-m'ho **tot**". Mostra totes les columnes de la taula. Va bé per fer una ullada ràpida.
 
-    *Taula d'Exemple: `Usuaris` (d'una app imaginària)*
-    | id_usuari | nom_usuari | email         | ciutat    |
-    | :-------- | :--------- | :------------ | :-------- |
-    | 1         | annagm     | anna@email.com| Madrid    |
-    | 2         | llui_gamer | luis@email.com| Barcelona |
-    | 3         | evart      | eva@email.com | Madrid    |
+*Taula d'Exemple: `Usuaris` (d'una app imaginària)*
+| id_usuari | nom_usuari | email         | ciutat    |
+| :-------- | :--------- | :------------ | :-------- |
+| 1         | annagm     | anna@email.com| Madrid  
+| 2         | llui_gamer | luis@email.com| Barcelona |
+| 3         | evart      | eva@email.com | Madrid    |
 
     ```sql
     -- Selecciona TOT de la taula Usuaris
