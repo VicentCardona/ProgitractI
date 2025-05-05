@@ -42,6 +42,7 @@ Amb `SELECT` tries quines **columnes** (quina informació específica) vols veur
 * **`SELECT *`**: L'asterisc (`*`) és el comodí "ensenya-m'ho **tot**". Mostra totes les columnes de la taula. Va bé per fer una ullada ràpida.
 
 *Taula d'Exemple: `Usuaris` (d'una app imaginària)*
+
 | id_usuari | nom_usuari | email         | ciutat    |
 | :-------- | :--------- | :------------ | :-------- |
 | 1         | annagm     | anna@email.com| Madrid  
@@ -63,6 +64,7 @@ Amb `SELECT` tries quines **columnes** (quina informació específica) vols veur
     SELECT nom_usuari, ciutat FROM Usuaris;
     ```
     *Resultat:*
+  
     | nom_usuari | ciutat    |
     | :--------- | :-------- |
     | annagm     | Madrid    |
@@ -78,6 +80,7 @@ Amb `SELECT` tries quines **columnes** (quina informació específica) vols veur
     SELECT DISTINCT ciutat FROM Usuaris;
     ```
     *Resultat:*
+  
     | ciutat    |
     | :-------- |
     | Madrid    |
