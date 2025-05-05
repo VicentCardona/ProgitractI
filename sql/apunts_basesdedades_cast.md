@@ -1,4 +1,4 @@
-# Apunts de SQL Bàsic 
+ # Apunts de SQL Bàsic 
 
 ## 1. Introducció a SQL: Què és això?
 
@@ -105,6 +105,7 @@ La clàusula **`WHERE`** és súper útil! És com dir: "Mostra'm només els que
 * **`WHERE ... > numero`**: Troba els que siguin **més grans** que un número.
 
     *Taula d'Exemple: `PuntuacionsJoc`*
+
     | id_partida | nom_jugador | punts | nivell |
     | :--------- | :---------- | :---- | :----- |
     | 1          | llui_gamer  | 1500  | 5      |
@@ -132,6 +133,7 @@ La clàusula **`WHERE`** és súper útil! És com dir: "Mostra'm només els que
 * **`AND`**: Per posar **dues (o més) condicions** que s'han de complir **totes dues**.
 
     *Taula d'Exemple: `Usuaris`*
+  
     | id_usuari | nom_usuari | email           | ciutat    | actiu |
     | :-------- | :--------- | :-------------- | :-------- | :---- |
     | 1         | annagm     | ana@email.com   | Madrid    | 1     |
@@ -148,6 +150,7 @@ La clàusula **`WHERE`** és súper útil! És com dir: "Mostra'm només els que
 * **`OR`**: Per posar **dues (o més) condicions** on només cal que se'n compleixi **una**.
 
     *Taula d'Exemple: `CançonsPlaylist`*
+  
     | id_canço | titol        | artista    | genere     | durada_seg |
     | :------- | :----------- | :--------- | :--------- | :--------- |
     | 1        | Malamente    | Rosalia    | Flamenc Pop| 150        |
@@ -176,6 +179,7 @@ La clàusula **`WHERE`** és súper útil! És com dir: "Mostra'm només els que
     * `_`: Significa "exactament una lletra qualsevol".
 
     *Taula d'Exemple: `Usuaris`*
+  
     | id_usuari | nom_usuari | email                 |
     | :-------- | :--------- | :-------------------- |
     | 1         | annagm     | anna@email.com        |
@@ -200,6 +204,7 @@ La clàusula **`WHERE`** és súper útil! És com dir: "Mostra'm només els que
 * **`NULL`**: Representa que **no hi ha valor**, que està buit o és desconegut. **Important:** No és el mateix que 0 o un text buit `''`. Per buscar valors `NULL`, has d'usar **`IS NULL`** o **`IS NOT NULL`**.
 
     *Taula d'Exemple: `PerfilsUsuaris`*
+  
     | id_usuari | nom_usuari | bio        | data_registre |
     | :-------- | :--------- | :--------- | :------------ |
     | 1         | annagm     | Hola!      | 2025-01-10    |
@@ -255,6 +260,7 @@ La clàusula **`WHERE`** és súper útil! És com dir: "Mostra'm només els que
 * **`GROUP BY`**: Agrupa les files que tenen el **mateix valor** en una columna. S'usa molt amb funcions que calculen coses per grup (com comptar quants hi ha a cada grup - `COUNT`, que veurem més endavant).
 
     *Taula d'Exemple: `Usuaris`*
+  
     | id_usuari | nom_usuari | ciutat    |
     | :-------- | :--------- | :-------- |
     | 1         | annagm     | Madrid    |
@@ -268,11 +274,13 @@ La clàusula **`WHERE`** és súper útil! És com dir: "Mostra'm només els que
     SELECT ciutat FROM Usuaris GROUP BY ciutat;
     ```
     *Resultat (només les ciutats, sense repetir):*
+  
     | ciutat    |
     | :-------- |
     | Madrid    |
     | Barcelona |
     | Sevilla   |
+  
     *(Per saber quants n'hi ha a cada ciutat, faríem: `SELECT ciutat, COUNT(*) FROM Usuaris GROUP BY ciutat;`)*
 
 ---
@@ -283,6 +291,7 @@ La clàusula **`WHERE`** és súper útil! És com dir: "Mostra'm només els que
 
     *Taula d'Exemple: `CançonsPlaylist` (la mateixa d'abans)*
     *Taula d'Exemple: `Artistes`*
+  
     | id_artista | nom_artista | genere_principal | pais |
     | :--------- | :---------- | :--------------- | :--- |
     | 1          | Rosalia     | Urbà/Flamenc    | ES   |
@@ -308,6 +317,7 @@ Les dates són importants (quan es va crear un post, quan es va fer una compra..
 * **Exemple Genèric (la funció exacta pot canviar):**
 
     *Taula d'Exemple: `PostsInstagram`*
+  
     | id_post | id_usuari | text_post       | data_publicacio |
     | :------ | :-------- | :-------------- | :-------------- |
     | 101     | annagm    | Foto platja!    | 2025-04-28      |
@@ -334,6 +344,7 @@ Els **`JOIN`** són súper potents! Permeten **combinar informació de diferents
 * **`INNER JOIN`**: El més típic. Combina files només quan hi ha una **coincidència en les dues taules**. Si un usuari no té puntuacions, no sortirà en el resultat d'unir `Usuaris` amb `PuntuacionsJoc`.
 
     *Taula d'Exemple: `Usuaris`*
+  
     | id_usuari | nom_usuari | ciutat    |
     | :-------- | :--------- | :-------- |
     | 1         | annagm     | Madrid    |
@@ -341,6 +352,7 @@ Els **`JOIN`** són súper potents! Permeten **combinar informació de diferents
     | 3         | evart      | Madrid    |
 
     *Taula d'Exemple: `PuntuacionsJoc`*
+  
     | id_partida | id_usuari_fk | punts | nivell |
     | :--------- | :----------- | :---- | :----- |
     | 1          | 2            | 1500  | 5      | -- Lluís
@@ -355,6 +367,7 @@ Els **`JOIN`** són súper potents! Permeten **combinar informació de diferents
     INNER JOIN PuntuacionsJoc ON Usuaris.id_usuari = PuntuacionsJoc.id_usuari_fk;
     ```
     *Resultat:*
+  
     | nom_usuari | punts |
     | :--------- | :---- |
     | llui_gamer | 1500  |
@@ -365,12 +378,14 @@ Els **`JOIN`** són súper potents! Permeten **combinar informació de diferents
 * **`Multiple Joins`**: Pots **encadenar `JOIN`s** per unir tres, quatre o més taules!
 
     *Afegim Taula `Jocs`*
+  
     | id_joc | nom_joc      | genere   |
     | :----- | :----------- | :------- |
     | 10     | Aventures 3D | Aventura |
     | 20     | Curses Bojes | Curses   |
 
     *Modifiquem `PuntuacionsJoc` per incloure `id_joc_fk`*
+  
     | id_partida | id_usuari_fk | id_joc_fk | punts | nivell |
     | :--------- | :----------- | :-------- | :---- | :----- |
     | 1          | 2            | 10        | 1500  | 5      |
@@ -385,6 +400,7 @@ Els **`JOIN`** són súper potents! Permeten **combinar informació de diferents
     INNER JOIN Jocs AS j ON p.id_joc_fk = j.id_joc;
     ```
     *Resultat:*
+  
     | nom_usuari | nom_joc      | punts |
     | :--------- | :----------- | :---- |
     | llui_gamer | Aventures 3D | 1500  |
@@ -414,17 +430,20 @@ Els **`JOIN`** són súper potents! Permeten **combinar informació de diferents
     LEFT JOIN PuntuacionsJoc ON Usuaris.id_usuari = PuntuacionsJoc.id_usuari_fk; -- Taula dreta
     ```
     *Resultat:*
+  
     | nom_usuari | punts |
     | :--------- | :---- |
     | annagm     | 2500  |
     | llui_gamer | 1500  |
     | llui_gamer | 1800  |
     | evart      | NULL  | -- L'Eva surt, però amb NULL perquè no té puntuacions
+  
     *(També hi ha `RIGHT JOIN` (manté tot de la dreta) i `FULL OUTER JOIN` (manté tot de les dues))*
 
 * **`Self Join`**: Unir una taula **amb si mateixa**. Sembla estrany, però és útil per a relacions dins la mateixa taula (ex: una llista d'usuaris on un pot ser "amic de" un altre usuari de la mateixa llista). Cal usar **àlies** (noms curts) per no confondre les "dues còpies" de la taula.
 
     *Taula d'Exemple: `Empleats` (amb qui és el seu cap)*
+  
     | id_empleat | nom       | id_cap |
     | :--------- | :-------- | :----- |
     | 1          | DirectorA | NULL   | -- El director no té cap
@@ -439,6 +458,7 @@ Els **`JOIN`** són súper potents! Permeten **combinar informació de diferents
     LEFT JOIN Empleats AS cap ON emp.id_cap = cap.id_empleat; -- La mateixa taula com a "cap"
     ```
     *Resultat:*
+  
     | NomEmpleat | NomDelCap |
     | :--------- | :-------- |
     | DirectorA  | NULL      |
